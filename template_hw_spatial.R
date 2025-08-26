@@ -1,8 +1,8 @@
 rm(list = ls())
-#setwd("")
+#setwd("~/GitHub/Plantilla0")
 
-gpklink=
-jsonlink=
+gpklink= "https://github.com/DataEspacialTorres/Plantilla0/raw/refs/heads/main/MapFromPython1.gpkg"
+jsonlink="https://github.com/DataEspacialTorres/Plantilla0/raw/refs/heads/main/MapFromPython2.geojson"
 
 library(sf)
 
@@ -20,3 +20,4 @@ saveRDS(map1gg,file='map1.rds')
 map2gg=ggplot() + theme_void() + geom_sf(data = map2)
 map2gg
 saveRDS(map2gg,file='map2.rds')
+
